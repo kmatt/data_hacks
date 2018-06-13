@@ -281,9 +281,9 @@ if __name__ == "__main__":
     parser.add_option("-B", "--custom-buckets", dest="custbuckets",
                       help="Comma seperated list of bucket " +
                       "edges for the histogram")
-    parser.add_option("--no-mvsd", dest="mvsd", action="store_false",
-                      default=True, help="Disable the calculation of Mean, " +
-                      "Variance and SD (improves performance)")
+    parser.add_option("--mvsd", dest="mvsd", action="store_true",
+                      default=False, help="Enable the calculation of Mean, " +
+                      "Variance and SD")
     parser.add_option("-f", "--bucket-format", dest="format", default="%10.4f",
                       help="format for bucket numbers")
     parser.add_option("-p", "--percentage", dest="percentage", default=False,
